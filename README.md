@@ -31,8 +31,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: (https://github.com/Junbol-Frontend-Mentor/loopstudios-landing-page)
-- Live Site URL: (https://junbol-frontend-mentor.github.io/loopstudios-landing-page/)
+- Solution URL: (https://github.com/Junbol-Frontend-Mentor/news-homepage)
+- Live Site URL: (https://junbol-frontend-mentor.github.io/news-homepage/)
 
 ## My process
 
@@ -48,13 +48,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### What I learned
 
-- Stop using fa-2x to enlarge these icons, use css rules instead.
-
-- On divs you need to add tabindex="0".
-
-- Be careful your mobile rules don't overide your desktop rules.
-
-- Working with the Grid was a challenge.
+- Working with the Grid was a challenge. But gradually I am making progress.
 
 ```
 
