@@ -1,60 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- Top Navigation Menu -->
+    <header>
+      <nav class="navTop_container">
+        <section class="navTop_container__logoMenuHam_wrapper">
+          <a class="navTop_container__logoTop" href="#home">
+            <img src="assets/images/logo.svg" alt="" />
+          </a>
+          <div class="navTop_container__menuContainer">
+            <div class="navTop_container__navMenu" id="navigationMenu">
+              <ul>
+                <li class="about">Home</li>
+                <li class="careers">New</li>
+                <li class="events">Popular</li>
+                <li class="products">Trending</li>
+                <li class="support">Categories</li>
+              </ul>
+            </div>
+            <div class="navTop_container__hamburgerClassIcon" id="hamburgerIcon" tabindex="0">
+              <!--🚩❓tabindex="0": -->
+              <!-- ✅ Makes the div focusable -->
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </section>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- <div class="navTop_container__slogan" id="sloganId"><p>IMMERSIVE EXPERIENCES THAT DELIVER</p></div> -->
+      </nav>
+    </header>
+    <main class="gridContainer">
+      <div class="heroImagePlusIntro">
+        <div class="heroImagePlusIntro__webImage"></div>
+        <div class="heroImagePlusIntro__intro">
+          <div class="heroImagePlusIntro__mainTitle">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="heroImagePlusIntro__textContent">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="heroImagePlusIntro__readMore" type="button">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="newContainer">
+        <div class="newContainer__newTitle">New</div>
+        <div class="newContainer__newItem">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr />
+        <div class="newContainer__newItem">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr />
+        <div class="newContainer__newItem">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+      <div class="bottomRow_Container">
+        <div class="Item1">
+          <div class="rowItem">
+            <div class="rowItem__image">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+            </div>
+            <div class="rowItem__rightSide">
+              <div class="rowItem__number">01</div>
+              <div class="rowItem__title">Reviving Retro PCs</div>
+              <div class="rowItem__text">What happens when old PCs are given modern upgrades?</div>
+            </div>
+          </div>
+        </div>
+        <div class="Item2">
+          <div class="rowItem">
+            <div class="rowItem__image">
+              <img src="./assets/images/image-top-laptops.jpg" alt="" />
+            </div>
+            <div class="rowItem__rightSide">
+              <div class="rowItem__number">02</div>
+              <div class="rowItem__title">Top 10 Laptops of 2022</div>
+              <div class="rowItem__text">Our best picks for various needs and budgets.</div>
+            </div>
+          </div>
+        </div>
+        <div class="Item3">
+          <div class="rowItem">
+            <div class="rowItem__image">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+            </div>
+            <div class="rowItem__rightSide">
+              <div class="rowItem__number">03</div>
+              <div class="rowItem__title">The Growth of Gaming</div>
+              <div class="rowItem__text">How the pandemic has sparked fresh opportunities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Coded by
+        <a href="https://www.frontendmentor.io/profile/Junbol" target="_blank">Junier Bolívar © 2024</a>
+      </div>
+    </footer>
+  </body>
 </html>
