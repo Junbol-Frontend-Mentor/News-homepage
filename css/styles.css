@@ -339,11 +339,15 @@ header {
 }
 
 @media (min-width: 1024px) {
+  .navTop_container {
+    max-width: 85rem;
+    margin: 0 auto;
+  }
   .navTop_container__navMenu {
     width: 30rem;
     top: 0.5rem;
     position: relative;
-    margin-right: 2rem;
+    margin-right: 0.7rem;
   }
   .navTop_container ul {
     display: flex;
@@ -362,10 +366,11 @@ header {
     display: none;
   }
   .gridContainer {
+    max-width: 85rem;
     display: grid;
     justify-content: center;
-    align-items: start;
-    align-content: center;
+    align-content: flex-start;
+    margin: 0 auto;
     grid-template-columns: repeat(3fr);
     grid-template-rows: repeat(4fr);
     grid-template-areas: "heroeImage heroImage new" "heroeImage heroImage new" "title textContent new" "base base base";

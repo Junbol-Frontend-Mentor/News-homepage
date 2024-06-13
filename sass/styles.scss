@@ -408,15 +408,17 @@ header {
   text-decoration: none;
 }
 
-//------ MEDIA QUERY FOR DESKTOPS AND TABLETS ----------------
+//============= MEDIA QUERY FOR DESKTOPS AND TABLETS ==================================
 
 @media (min-width: 1024px) {
   .navTop_container {
+    max-width: 85rem;
+    margin:0 auto;
     &__navMenu {
       width: 30rem; // ✅ Adjust width to auto for desktop
       top: 0.5rem; // ✅ Reset top for desktop
       position: relative; // ✅ Override the position for desktop view
-      margin-right: 2rem;
+      margin-right: 0.7rem;
     }
 
     ul {
@@ -436,10 +438,12 @@ header {
   }
 
   .gridContainer {
+    max-width: 85rem; // ✅ Adjust width to auto for desktop
     display: grid;
     justify-content: center;
-    align-items: start;
-    align-content: center;
+    //align-items: start;
+    align-content:flex-start;//🚩this was the solution to keep the grid attached to teh nav
+    margin:0 auto;
     grid-template-columns: repeat(3fr);
     grid-template-rows: repeat(4fr);
     grid-template-areas:
